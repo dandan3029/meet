@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/selfCenter/selfCenter",
+    "pages/detail/detail",
+    "pages/certification/certification",
+    "pages/edit/edit",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f18a9b",
+    "navigationBarTitleText": "豫见",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#000",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "豫见",
+        "iconPath": "image/首页（灰）.png",
+        "selectedIconPath": "image/首页.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "image/消息（灰）.png",
+        "selectedIconPath": "image/消息.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/我的（灰）.png",
+        "selectedIconPath": "image/我的.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

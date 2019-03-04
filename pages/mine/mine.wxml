@@ -1,0 +1,25 @@
+<!--pages/mine/mine.wxml-->
+<view class='pageTop'>
+  <view class="username">{{user.username}}</view>
+  <view class="info-block">
+    <text class="info-block-num">{{user.iLike}}\n</text>
+    <text class="info-block-desc">我关注的</text>
+  </view>
+  <view class="vertical"></view>
+  <view class='info-block'>
+    <text class="info-block-num">{{user.likeMe}}\n</text>
+    <text class="info-block-desc">关注我的</text>
+  </view>
+  <image src="{{user.photo}}" class="user-photo" mode="aspectFill"></image>
+</view>
+<view class="kind-list">
+  <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+    <view class="king-list-item">
+      <navigator url= "{{item.url}}" class="kind-list-item">
+        <view class="navigator-text" class="kind-list-item-text">{{item.name}}</view>
+        <image class="kind-list-item-img" src="/image/{{item.id}}.png"></image>
+      </navigator>
+    </view>
+  </block>
+</view>
+

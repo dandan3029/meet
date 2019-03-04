@@ -1,0 +1,32 @@
+<!--pages/certification/certification.wxml-->
+<view class="page-body">
+  <text class="page-title">仅小程序认证使用，请放心上传</text>
+  <view class="page-section">
+    <view class="weui-cells__title">身份证正面</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="button-wrp">
+          <button class="uploadImg" bindtap="chooseimage1">+</button>
+          <image class="img" src="{{tempFilePaths1}}" mode="aspecFill" style=""/> 
+        </view>
+      </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">毕业证</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="button-wrp">
+          <button class="uploadImg" bindtap="chooseimage2">+</button>
+          <image class="img" src="{{tempFilePaths2}}" mode="aspectFit" style=""/> 
+        </view>
+      </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">录用公示</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="button-wrp">
+          <button class="uploadImg" bindtap="chooseimage3">+</button>
+          <image class="img" src="{{tempFilePaths3}}" mode="aspecFill" style=""/> 
+        </view>
+      </view>
+  </view>
+  <button class="submit">提交</button>
+</view>

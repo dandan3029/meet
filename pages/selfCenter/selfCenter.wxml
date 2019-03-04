@@ -1,0 +1,32 @@
+<view class="selfCard">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFit"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="selfInfo">
+    <text class="selfInfo-name">{{user.name}}</text>
+    <text class="selfInfo-city">{{user.city}}</text>
+    <view class="selfInfo-detail">
+      <text class="selfInfo-detail-item" style="padding-left:0;">{{user.age}}岁</text>
+      <view class="selfInfo-detail-vertical"></view>
+      <text class="selfInfo-detail-item">{{user.height}}</text>
+      <view class="selfInfo-detail-vertical"></view>
+      <text class="selfInfo-detail-item">{{user.major}}</text>
+      <view class="selfInfo-detail-vertical"></view>
+      <text class="selfInfo-detail-item">{{user.degree}}</text>
+    </view>
+  </view>
+  <view class="self-desc">
+    <view class="self-desc-item">
+      <view class="self-desc-item-head">个人介绍</view>
+      <view class="self-desc-item-body">{{user.selfDesc}}</view>
+    </view>
+    <view class="self-desc-item">
+      <view class="self-desc-item-head">对另一半的期望</view>
+      <view class="self-desc-item-body">{{user.expect}}</view>
+    </view>
+  </view>
+</view>

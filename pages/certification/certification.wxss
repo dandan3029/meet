@@ -1,0 +1,3 @@
+/* pages/certification/certification.wxss */
+@import "/lib/weui.wxss";
+@import "/pages/edit/edit.wxss";

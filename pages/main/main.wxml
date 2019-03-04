@@ -1,0 +1,21 @@
+<!--pages/main/main.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="item-list">
+  <view class="pro-item" wx:for="{{proList}}" bindtap ='toDetail' data-index='{{index}}'>
+    <image class="pro-picture" src="{{item.picture}}" mode='aspectFill'></image>
+    <view class="pro-body">
+      <view class="pro-school">{{item.school}}</view>
+      <view class="pro-height">{{item.height}}</view>
+      <view class="pro-area">{{item.area}}</view>
+      <text class="pro-desc">{{item.desc}}</text>
+      <image class="pro-like" src="/image/heart.png" bindtap='toLike'></image>
+    </view>
+  </view>
+</view>

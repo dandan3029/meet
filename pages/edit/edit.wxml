@@ -1,0 +1,75 @@
+<view class="page-body">
+<text class="page-title">请完善您的个人资料</text>
+  <view class="page-section">
+    <view class="weui-cells__title">身高</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">体重</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">工作地点</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">您意向中另一半的工作地点</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">个人介绍</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="textarea-wrp">
+          <textarea style="height: 5em" />
+        </view>
+      </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">对另一半的期望</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="textarea-wrp">
+          <textarea style="height: 5em" />
+        </view>
+      </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">上传你的美照吧</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files">
+            <block wx:for="{{imageList}}" wx:for-item="image">
+                <view class="weui-uploader__file">
+                    <image class="img" src="{{image}}" data-src="{{image}}" bindtap="previewImage" mode='aspectFit'></image>
+                    <!-- weui-uploader__img -->
+                </view>
+            </block>
+          </view>
+          <view class="weui-uploader__input-box">
+            <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            <!-- weui-uploader__input -->
+          </view>
+        </view>
+        <!-- <view class="button-wrp">
+          <image class="img" mode="aspectFit" src="{{image}}"  data-src="{{image}}" bindtap="previewImage"style=""/>
+          <button class="uploadImg" bindtap="chooseImage">+</button>
+        </view> -->
+      </view>
+  </view>
+  <button class="submit">提交</button>
+</view>

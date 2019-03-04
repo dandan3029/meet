@@ -1,0 +1,28 @@
+<!--pages/message/message.wxml-->
+<view class="head">
+  <view class="head-name">消息</view>
+  <view class='head-remind'>互相关注</view>
+  <view class="head-horizon"></view>
+</view>
+<view class="remind-blank">
+  <image src='/image/blank.png' class="remind-blank-image" mode="aspectFit"></image>
+  <view class="remind-blank-text">这里空空如也~</view>
+</view>
+
+
+<view class="bottom">
+  <view class="bottom-item">
+    <image src="/image/heart.png" class="bottom-item-image"></image>
+    <view class="bottom-item-desc">
+      <text class="bottom-item-desc-little">在首页遇到心仪的TA\n</text>
+      <text class="bottom-item-desc-big">点击喜欢</text>
+    </view>
+  </view>
+  <view class="bottom-item">
+    <image src="/image/消息.png" class="bottom-item-image"></image>
+    <view class="bottom-item-desc">
+      <text class="bottom-item-desc-little">如果TA也关注了你\n</text>
+      <text class="bottom-item-desc-big">互相关注 开始聊天</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.pageTop{
+  margin: 30rpx;
+  padding:30rpx;
+  background-color: white;
+}
+.username{
+  color: #f18a9b;
+  font-size: 50rpx;
+}
+.info-block{
+  margin-top:30rpx;
+  width:120rpx;
+  height:120rpx;
+  display: inline-block;
+  text-align: center;
+}
+.info-block-num{
+  color: #f18a9b;
+  font-size: 60rpx; 
+}
+.info-block-desc{
+  font-size: 28rpx;
+  color: #888;
+}
+.vertical{
+  width:5rpx;
+  height:100rpx;
+  margin:10rpx 30rpx;
+  background-color:#888;
+  display: inline-block;
+}
+.user-photo{
+  width:160rpx;
+  height:160rpx;
+  border-radius: 80rpx;
+  float:right;
+}
+.kind-list{
+  margin:30rpx;
+}
+.kind-list-item{
+  background-color: white;
+  margin-top:20rpx;
+  padding:30rpx;
+}
+.kind-list-item-text{
+  display: inline;
+}
+.kind-list-item-img{
+  width:60rpx;
+  height:60rpx;
+  float:right;
+}
